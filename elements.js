@@ -37,10 +37,6 @@ class BusStopElement extends HTMLElement {
         var code = this.getAttribute("stop_code");
         this.name.appendChild(this.makeCell(name))
         this.code.appendChild(this.makeCell(code))
-        
-        
-        // this.innerText = at;
-        
     }
 }
 customElements.define("bus-stop", BusStopElement);

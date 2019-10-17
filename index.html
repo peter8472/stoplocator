@@ -10,6 +10,12 @@
       body {
         border: 1px solid black;
       }
+      data-tab {
+        display:table;
+      }
+      bus-stop {
+        display:table-row;
+      }
     </style>
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
@@ -25,7 +31,9 @@
     
     <button id="reload">clear and reload</button>
     <div id="status"></div>
-    <table id="output"></table>
+    <label for="matcher">enter stop regex</label>
+    <input type=text id="matcher">
+    <data-tab id="output"></data-tab>
   </body>
 
 </html>
