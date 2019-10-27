@@ -4,42 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>Hello World</title>
+    <title>return from Dollar Tree</title>
+    <link rel="stylesheet" href="unitrans.css">
 
-    <style>
-      body {
-        border: 1px solid black;
-      }
-      data-tab {
-        display:table;
-      }
-      bus-stop {
-        display:table-row;
-      }
-    </style>
+    
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
          so we use a script file. -->
-    <script src="app.js" defer type="module"></script>
+    <script src="predictions.js" defer type="module"></script>
     <script src="elements.js" type="module"></script>
     
 
   </head>
 
   <body>
+      <template id="busrow">
+          
+          <tr id="prediction">
+                <td id="stopTitle"></td>
+              <td id="line"></td>
+
+          </tr>
+          
+        
+      </template>
     <!-- This code is in the public domain. Enjoy! -->
-    <h1>Hello World</h1>
+    
     
     <button id="reload">clear and reload</button>
-    <div id="status"></div>
+    <button id="predict">make prediction</button>
+    <table>
+        <tbody id ="status">
+            
+        </tbody>
+    </table>
+    <xml id="xmlview"></xml>
     <label for="matcher">enter stop regex</label>
     <input type=text id="matcher">
+    <style>
+    </style>
     <data-tab id="output"></data-tab>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-  
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  
-    <!-- Add Firebase products that you want to use -->
     
     
 

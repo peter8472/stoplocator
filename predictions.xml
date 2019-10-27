@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<body copyright="All data copyright Unitrans ASUCD/City of Davis 2019.">
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="P" routeTag="P" stopTitle="Covell Blvd &amp; Pole Line Rd (WB)" stopTag="22362">
+  <direction title="Counterclockwise to UCD MU">
+  <prediction epochTime="1572139923374" seconds="2363" minutes="39" isDeparture="false" affectedByLayover="true" dirTag="P_0_var0" vehicle="4001" block="67" tripTag="P_3_1810" />
+  </direction>
+<message text="Weekend Service is running today." priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="P" routeTag="P" stopTitle="5th St &amp; Pole Line Rd (EB)" stopTag="22076">
+  <direction title="Counterclockwise to UCD MU">
+  <prediction epochTime="1572138987786" seconds="1427" minutes="23" isDeparture="true" affectedByLayover="true" dirTag="P_0_var0" vehicle="4001" block="67" tripTag="P_3_1810" />
+  </direction>
+<message text="Weekend Service is running today." priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="Z" routeTag="Z" stopTitle="5th St &amp; Pole Line Rd (WB)" stopTag="22077" dirTitleBecauseNoPredictions="Inbound to UCD MU">
+<message text="Weekend Service is running today." priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="L" routeTag="L" stopTitle="8th St &amp; Chestnut Ln (EB)" stopTag="22102" dirTitleBecauseNoPredictions="Outbound to Loyola">
+<message text="The L-line does not run on weekends or on holidays. Use the O line for weekend service to Davis Manor Shopping Center." priority="Normal"/>
+<message text="Weekend Service is running today." priority="Normal"/>
+<message text="CONFIRMED! ATTENTION A &amp; L LINE RIDERS: A &amp; L Lines will return to Silo Terminal on Oct. 28!" priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="Q" routeTag="Q" stopTitle="5th St &amp; Pole Line Rd (WB)" stopTag="22077">
+  <direction title="Clockwise to UCD MU">
+  <prediction epochTime="1572137975439" seconds="415" minutes="6" isDeparture="true" affectedByLayover="true" dirTag="Q_0_var0" vehicle="4005" block="68" tripTag="Q_3_1710" />
+  <prediction epochTime="1572141145743" seconds="3585" minutes="59" isDeparture="true" affectedByLayover="true" dirTag="Q_0_var0" vehicle="4005" block="68" tripTag="Q_3_1810" />
+  </direction>
+<message text="Weekend Service is running today." priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="L" routeTag="L" stopTitle="8th St &amp; Chestnut Ln (WB)" stopTag="22103" dirTitleBecauseNoPredictions="Inbound to UCD Silo">
+<message text="The L-line does not run on weekends or on holidays. Use the O line for weekend service to Davis Manor Shopping Center." priority="Normal"/>
+<message text="Weekend Service is running today." priority="Normal"/>
+<message text="CONFIRMED! ATTENTION A &amp; L LINE RIDERS: A &amp; L Lines will return to Silo Terminal on Oct. 28!" priority="Normal"/>
+</predictions>
+<predictions agencyTitle="Unitrans ASUCD/City of Davis" routeTitle="A" routeTag="A" stopTitle="5th St &amp; Pole Line Rd (WB)" stopTag="22077" dirTitleBecauseNoPredictions="Inbound to UCD Silo">
+<message text="Weekend Service is running today." priority="Normal"/>
+<message text="CONFIRMED! ATTENTION A &amp; L LINE RIDERS: A &amp; L Lines will return to Silo Terminal on Oct. 28!" priority="Normal"/>
+</predictions>
+</body>

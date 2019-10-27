@@ -10,7 +10,23 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "app.js",
-    "revision": "a0769442ecb7ced352c3e2a0725bb511"
+    "revision": "97c21b82578fd4f289218bdbc6ebc51a"
+  },
+  {
+    "url": "datastore.js",
+    "revision": "5a74d67e2778e16ce89cc1c81cfa313b"
+  },
+  {
+    "url": "demo.js",
+    "revision": "1817e6922f90d7494165b1d72aa47f1d"
+  },
+  {
+    "url": "elements.js",
+    "revision": "25f6ff4fb61ff8bfb6ab6d047c640c39"
+  },
+  {
+    "url": "haver.js",
+    "revision": "2cbfe34ffe55ec4f245d05361f11b5c3"
   },
   {
     "url": "icons/icon128x128.png",
@@ -30,15 +46,23 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "a13325fe27034cee7f2dcf22d0903007"
+    "revision": "842beb6f304e16ca98a6ee3cf2053f8d"
   },
   {
     "url": "service-worker.js",
     "revision": "31d25ed0f06eaba3418b653b83f11803"
   },
   {
+    "url": "stops.json",
+    "revision": "46d36c562aaac990322e8bea1bbcf924"
+  },
+  {
+    "url": "util.js",
+    "revision": "d9e3281364d413e387c503b45e405d1c"
+  },
+  {
     "url": "workbox-config.js",
-    "revision": "e7f165d15d23dbf31f8dc29ec40bc523"
+    "revision": "43cea9309a759cbc0437acd44c17f701"
   }
 ]);
 } else {
