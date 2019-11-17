@@ -1,5 +1,6 @@
 // JavaScript File
-
+// PLEASE PUBLISH THIS AS A MODULE
+// IT IS USED IN TOO MANY PLACES
 
 /* These functions compute distance between points on the earth
 and the inverse 
@@ -60,14 +61,15 @@ function directionTo(sourceOrig, destOrig, unitsFormatter) {
     
 
 function makestop(bus) {
-    // convert a bus structure to a "stop"
+    // turn this coordinate pair into stop_lat, stop_lon
+    // this old code was needed for GTFS files
     var tmp = {};
     var latvar ='stop_lat';
     var lonvar = "stop_lon";
-    if (bus.hasOwnProperty('latitude')) {
+    if ('latitude' in bus) {
         latvar = "latitude";
         lonvar = "longitude";
-    } else if (bus.hasOwnProperty("X")) {
+    } else if ("X" in bus) {
         latvar = "Y";
         lonvar = "X";
     }
@@ -93,10 +95,11 @@ function sigma(old, current) {
     // TODO backport this to haver in gtfs and my utility dir
         
     // """
-    if (! old.hasOwnProperty("stop_lat")) {
+    if (!( "stop_lat" in old)) {
         
         old = makestop(old)
-        
+    }
+    if (!( "stop_lat"  in current)) {
         current = makestop(current);
     }
     
@@ -131,7 +134,9 @@ function feetToDegrees(feet, latitude) {
 }
 
 function  feet(old,current) {
-    return sigma(old,current) * 20925524.9; // radius of earth in ft
+    
+     var tmp = sigma(old,current) * 20925524.9; // radius of earth in ft
+     return tmp;
 }
 // fixme: javascripot doesn't have named parameters
 // func1tion pointAtDistance(latDeg1,lonDeg1,degrees, miles=null) {

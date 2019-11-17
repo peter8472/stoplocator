@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>Hello World</title>
+    <title>unitrans bus stops of 2018</title>
 
     <style>
       body {
@@ -22,18 +22,21 @@
          so we use a script file. -->
     <script src="app.js" defer type="module"></script>
     <script src="elements.js" type="module"></script>
-    
 
   </head>
 
   <body>
     <!-- This code is in the public domain. Enjoy! -->
-    <h1>Hello World</h1>
+    <h1>old (2018?) Unitrans bus stops </h1>
+    
     
     <button id="reload">clear and reload</button>
+    <button id="geolocate">stops near me</button>
     <div id="status"></div>
     <label for="matcher">enter stop regex</label>
     <input type=text id="matcher">
+    <label for="max_dist">enter max distance</label>
+    <input type=text id="max_dist">
     <data-tab id="output"></data-tab>
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
   
@@ -67,7 +70,7 @@
     appId: "1:160338659809:web:0e6dfb08120060bec56aa0"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  //firebase.initializeApp(firebaseConfig);
 </script>
       ====
     

@@ -1,6 +1,6 @@
 
 
-var url = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=unitrans"
+var url = "https://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=unitrans"
 
 var mystops = [
     
@@ -37,8 +37,10 @@ function grab() {
             temp.getElementById("stopTitle").appendChild(stopTitle);
             for (var pred of block.getElementsByTagName("prediction")) {
                 var v  = document.createElement("td");
+                var mytime = pred.getAttribute("epochTime")
+                mytime = new Date(parseFloat(mytime)).toLocaleString();
                 v.appendChild(
-                    document.createTextNode(pred.getAttribute("minutes"))
+                    document.createTextNode(mytime)
                 )
                 temp.getElementById("prediction").appendChild(v)
 
@@ -52,7 +54,7 @@ function grab() {
 
         
     });
-    var testing = true;
+    var testing = false;
     if (testing) {
         console.log("test mode")
         xhr.open("GET", "predictions.xml")
