@@ -4,36 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>unitrans bus stops of 2018</title>
-<!-- test this: switch to style sheet -->
-  <link href="unitrans.css" rel="stylesheet">
+    <title>return from Dollar Tree</title>
+    <link rel="stylesheet" href="unitrans.css">
 
+    
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
          so we use a script file. -->
-    <script src="app.js" defer type="module"></script>
+    <script src="byroute.js" defer type="module"></script>
     <script src="elements.js" type="module"></script>
+    
 
   </head>
 
   <body>
+      <template id="busrow">
+          
+          <tr id="prediction">
+                <td id="stopTitle"></td>
+              <td id="line"></td>
+
+          </tr>
+          
+        
+      </template>
     <!-- This code is in the public domain. Enjoy! -->
-    <h1>old (2018?) Unitrans bus stops </h1>
+    <a href="unitrans.html">view two sample stops</a>
     
     
-    <button id="reload">clear and reload</button>
-    <button id="geolocate">stops near me</button>
-    <div id="status"></div>
+    
+    <button id="show">show for route</button>
+    <table>
+        <tbody id ="status">
+            
+        </tbody>
+    </table>
+    <xml id="xmlview"></xml>
     <label for="matcher">enter stop regex</label>
     <input type=text id="matcher">
-    <label for="max_dist">enter max distance</label>
-    <input type=text id="max_dist">
+    <style>
+    </style>
     <data-tab id="output"></data-tab>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-  
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  
-    <!-- Add Firebase products that you want to use -->
     
     
 
@@ -61,7 +72,7 @@
     appId: "1:160338659809:web:0e6dfb08120060bec56aa0"
   };
   // Initialize Firebase
-  //firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
 </script>
       ====
     
